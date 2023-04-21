@@ -1,1 +1,34 @@
 Shell Scripting is an open-source operating system.
+A shell script is a type of computer program developed to be executed by a Unix shell, which is also known as a command-line interpreter. Several shell script dialects are treated as scripting languages. Classic operations implemented by shell scripts contain printing text, program execution, and file manipulation. A script configures the environment, executes the program, and does necessary logging or clean-up is known as a wrapper.
+
+# Capabilities of Shell Script 
+    **comments** 
+        
+        Comments are avoided by the shell. Typically, they start with the hash (#) symbol and continue until the completion of the line.
+
+    **Scripting language configurable choice**
+        
+        The hash-bang or shebang is a unique type of comment that the system applies to decide what interpreter to utilize to run the file. The hash-bang must be the file's first line and begin with the "#!" symbol. Following the "#!" prefix, the characters are specified as a path to any executable program that will specify the script in Unix-like operating systems.
+    
+    **Shortcuts**
+
+        A shell script can offer an easy variation of the system command in which unique environment settings, post-processing, or command options automatically apply, but in a form that permits the new script to act as a completely normal Unix command.
+
+        An example would be to make an ls version, the command for listing files, providing a reduced 'l' command name, which would normally be saved in the bin directory of a user as /home/username/bin/l, and the command option's default set pre-supplied.
+
+        #!/bin/ sh  
+        LC_COLLATE=C ls -FCas "$@"  
+
+        In the above example, the first line applies shebang to represent which interpreter should run the rest of the script. The other line creates a listing using options for several file format columns, indicators, all files, and sizes in blocks. The LC_COLLATE=C configures the default collation sequence for not folding lower and uppercase together.
+
+        
+        Another shell script example that could be run as a shortcut would be to show all file and directory lists in a given directory.
+
+        #!/bin/ sh  
+        clear  
+        ls -al
+
+        In the above example, the shell script would begin with its common beginning line of #!/bin/ sh. Following it, the script runs the clear command, which clears the command-line of every text before the next line. The ls -al command will list the directories and files in the directory through which the script is being executed. The attributes of the ls command could be modified to reflect the requirements of the user.
+
+
+
