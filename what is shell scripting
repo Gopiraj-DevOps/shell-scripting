@@ -42,4 +42,3 @@ Batch jobs**
         Although, they are still restricted by the fact that almost all shell languages have no or little support for complex math, data typing systems, threading, classes, and other basic full language aspects, and are also much slower than interpreted languages or compiled code specified with speed as an administration goal.
 
         The standard awk and sed Unix tools give additional capabilities for shell programming. Also, Perl can be installed in shell scripts as other scripting languages such as Tcl. Tcl and Perl also provide graphics toolkits.
-
