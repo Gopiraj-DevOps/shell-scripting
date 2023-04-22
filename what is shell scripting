@@ -30,5 +30,16 @@ A shell script is a type of computer program developed to be executed by a Unix 
 
         In the above example, the shell script would begin with its common beginning line of #!/bin/ sh. Following it, the script runs the clear command, which clears the command-line of every text before the next line. The ls -al command will list the directories and files in the directory through which the script is being executed. The attributes of the ls command could be modified to reflect the requirements of the user.
 
+Batch jobs**
+        A shell script permits many commands that would be manually entered at a command-line interface to be automatically executed without needing to wait for any user to generate all sequence stages.
 
+    **Generalization**
+        Common batch jobs are usual for separated tasks, but using shell variables, tests, and loops gives much more compliance to users. The POSIX sh script is used to transform JPEG images into PNG images, in which the image titles are given possibly by wildcards in the command-line rather than all being listed in the script; it can be made with this file, generally saved inside a file such as /home/username/bin/jpg2png.
+
+    **Programming** 
+        Also, several modern shells supply many features generally detected only in more practical general-purpose programming languages like subroutines, arrays, comments, variables, control flow constructs, and so on. With these types of features available, it's possible to reasonably write practical applications as shell scripts.
+
+        Although, they are still restricted by the fact that almost all shell languages have no or little support for complex math, data typing systems, threading, classes, and other basic full language aspects, and are also much slower than interpreted languages or compiled code specified with speed as an administration goal.
+
+        The standard awk and sed Unix tools give additional capabilities for shell programming. Also, Perl can be installed in shell scripts as other scripting languages such as Tcl. Tcl and Perl also provide graphics toolkits.
 
